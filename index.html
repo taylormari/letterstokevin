@@ -2,41 +2,31 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=9" />
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="letters.css">
 
+  <script type="text/javascript" 
+            src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script type="text/javascript" 
+            src="./easy-comment/jquery.easy-comment.js"></script>
+    <script type="text/javascript">
+    jQuery(document).ready(function(){
+    // Your other javascript code if any
+
+    $("#textbox").EasyComment({
+      path:"/lab/easy-comment/", //Change it to the folder where you put the easycomment files
+      moderate:false,
+      maxReply:5
+    });
+    // Your other javascript code if any
+    });
+    </script>
+  </head>
  
   <title>letters to waky</title>
 <body>
-
-	<p>
-		dear waky,
-</p>
-12/2<br>
-
-One point that stuck out to me recently at church was how God of the Bible is the only religious diety that doesn't ask for us to accomplish something, or fix ourselves up for him. He wants me in the middle of my grossness/uncertainty/lonliness. just look at any person from the bible, they're messed up
-<p></p>
-
-i want to express to you the same kind of love I feel from God, i want you to know what God's love feels like<br>
-
-<p></p>
-his love is:
-<p></p>
-<i>unconditional</i><br>
-no matter how often you give in, or whatever you've done in past, you're never too far gone for God to redeem you 
-<p></p>
-
-<i>tangible</i><br>
-through people, maybe me, in community
-<p></p>
-
-<i>sacrificial</i><br>
-he gave his son, expecting nothing in return
-<p></p>
-
-<i>available</i><br>
-we can receive it at any time. just have to reach out
 <p></p>
 
 12/6<br>
@@ -56,9 +46,9 @@ also been realizing how much you give is what you get.
 i never fully dove into your interests, and neither did you mine
 <br>
 maybe i shouldn't be writing all this to you. i just don't want to keep it all in my head anymore, and i want you to understand <br>
-might call you today
+
 <p></p>
-<b>reply</b>
+<i>still working on the comment box</i>
 <!-- 
 <form method="post" action="send_mail.php">
 <p><label>
@@ -74,10 +64,16 @@ title<br></label>
 <p><button>submit message</button></p>
 </form> -->
 
-<form method="post" action="send_mail.php">
+  
+ 
+<div id="textbox" style="width:1024px;height:800px;">
+	<form name="ec-comment-form" method="post">
         <input type="text" name="text1" id="text1" /><br /><br />
         <textarea name="message" id="textbox"></textarea><br /><br />
-        <input type="submit" value="submit"><br /><br />
+       <input type="submit" value="submit"><br /><br />
 </form>
+</div>
+
+
 
 </body>
